@@ -172,13 +172,17 @@ public class CityConnect {
 
 		if (commandTypeString.equalsIgnoreCase("addroute")) {
 			return COMMAND_TYPE.ADD_ROUTE;
-		} else if (commandTypeString.equalsIgnoreCase("getdistance")) {
-			return COMMAND_TYPE.GET_DISTANCE;
-		} else if (commandTypeString.equalsIgnoreCase("exit")) {
-		 	return COMMAND_TYPE.EXIT;
-		} else {
-			return COMMAND_TYPE.INVALID;
 		}
+		
+		if (commandTypeString.equalsIgnoreCase("getdistance")) {
+			return COMMAND_TYPE.GET_DISTANCE;
+		} 
+		
+		if (commandTypeString.equalsIgnoreCase("exit")) {
+		 	return COMMAND_TYPE.EXIT;
+		}
+		
+		return COMMAND_TYPE.INVALID;
 	}
 
 	/**
