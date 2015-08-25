@@ -284,11 +284,13 @@ public class CityConnect {
 	 */
 	private static int location(String newStartLocation,
 			String newEndLocation) {
+		String existingStartLocation;
+		String existingEndLocation;
 		
 		for (int i = 0; i < route.length; i++) {
 
-			String existingStartLocation = route[i][STORAGE_POSITION_START_LOCATION];
-			String existingEndLocation = route[i][STORAGE_POSITION_END_LOCATION];
+			existingStartLocation = route[i][STORAGE_POSITION_START_LOCATION];
+			existingEndLocation = route[i][STORAGE_POSITION_END_LOCATION];
 
 			if (existingStartLocation == null) { // empty slot
 				return i;
