@@ -220,10 +220,11 @@ public class CityConnect {
 	 */
 	private static int  getPositionOfExistingRoute(String newStartLocation,
 			String newEndLocation) {
+		String existing_start_location, existing_end_location;
 		for (int i = 0; i < route.length; i++) {
 
-			String existing_start_location = route[i][STORAGE_POSITION_START_LOCATION];
-			String existing_end_location = route[i][STORAGE_POSITION_END_LOCATION];
+			existing_start_location = route[i][STORAGE_POSITION_START_LOCATION];
+			existing_end_location = route[i][STORAGE_POSITION_END_LOCATION];
 
 			if (existing_start_location == null) { //beginning of empty slots
 				return NOT_FOUND; 
