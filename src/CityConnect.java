@@ -337,7 +337,6 @@ public class CityConnect {
 	}
 
 	private static String[] splitParameters(String commandParametersString) {
-		String[] parameters = commandParametersString.trim().split("\\s+");
-		return parameters;
+		return commandParametersString.trim().split("\\s+");
 	}
 }
