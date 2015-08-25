@@ -51,11 +51,6 @@ public class CityConnect {
 	private static final String WELCOME_MESSAGE = "Welcome to SimpleRouteStore!";
 	private static final String MESSAGE_NO_SPACE = "No more space to store locations";
 
-	// These are the possible command types
-	enum COMMAND_TYPE {
-		ADD_ROUTE, GET_DISTANCE, INVALID, EXIT
-	};
-
 	// This is used to indicate there is no suitable slot to store route
 	private static final int SLOT_UNAVAILABLE = -1;
 	
@@ -81,7 +76,7 @@ public class CityConnect {
 	private static final int STORAGE_POSITION_START_LOCATION = 0;
 	private static final int STORAGE_POSITION_END_LOCATION = 1;
 	private static final int STORAGE_POSITION_DISTANCE = 2;
-
+	
 	/*
 	 * This variable is declared for the whole class (instead of declaring it
 	 * inside the readUserCommand() method to facilitate automated testing using
@@ -89,7 +84,11 @@ public class CityConnect {
 	 * text file will be processed.
 	 */
 	private static Scanner scanner = new Scanner(System.in);
-
+	
+	// These are the possible command types
+	enum COMMAND_TYPE {
+		ADD_ROUTE, GET_DISTANCE, INVALID, EXIT
+	};
 	/*
 	 * ==============NOTE TO STUDENTS======================================
 	 * Notice how this method solves the whole problem at a very high level. We
