@@ -306,9 +306,6 @@ public class CityConnect {
 		return SLOT_UNAVAILABLE;
 	}
 
-	/**
-	 * This operation checks if two routes represents the same route.
-	 */
 	private static boolean sameRoute(String startLocation1,
 			String endLocation1, String startLocation2, String endLocation2) {
 
