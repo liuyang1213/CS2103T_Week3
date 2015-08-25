@@ -97,12 +97,11 @@ public class CityConnect {
 	 * ====================================================================
 	 */
 	public static void main(String[] args) {
-		String command, userCommand, feedback;
+		String userCommand, feedback;
 		showToUser(WELCOME_MESSAGE);
 		while (true) {
 			System.out.print("Enter command:");
-			command = scanner.nextLine();
-			userCommand = command;
+			userCommand = scanner.nextLine();
 			feedback = executeCommand(userCommand);
 			showToUser(feedback);
 		}
