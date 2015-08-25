@@ -66,9 +66,6 @@ public class CityConnect {
 	private static final int PARAM_POSITION_END_LOCATION = 1;
 	private static final int PARAM_POSITION_DISTANCE = 2;
 
-	// This array will be used to store the routes
-	private static String[][] route = new String[10][3];
-
 	/*
 	 * These are the locations at which various components of the route will be
 	 * stored in the routes[][] array.
@@ -84,6 +81,9 @@ public class CityConnect {
 	 * text file will be processed.
 	 */
 	private static Scanner scanner = new Scanner(System.in);
+	
+	// This array will be used to store the routes
+	private static String[][] route = new String[10][3];
 	
 	// These are the possible command types
 	enum COMMAND_TYPE {
